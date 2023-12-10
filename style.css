@@ -7,7 +7,8 @@ body{
   margin: 0px;
   background: #ccc;
   display: flex;
-  flex-direction: column;}
+  flex-direction: column;
+}
 
 h1{
   display: block;
@@ -59,9 +60,6 @@ input{
   flex-direction: column;
 }
 
-.css{
-  text-align: left;
-}
 .css span{
   display: block;
   margin-bottom: .5rem;
@@ -91,16 +89,25 @@ input{
   h1{
     font-size: 2.5rem;
   }
-  .button-creator{
+  .button-creator	{
     grid-template-columns: 1fr;
     gap: 10px;
-
+    align-items: center;
   }
   .body{
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
   }
+  .css{
+    font-size: .8rem;
+  }
+  .resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
 
 
 }
