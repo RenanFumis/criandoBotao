@@ -1,0 +1,106 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  margin: 0px;
+  background: #ccc;
+  display: flex;
+  flex-direction: column;}
+
+h1{
+  display: block;
+  font-family: monospace;
+  font-size: 4rem;
+  text-align: center;
+  color: #333;
+}
+
+label, select{
+  display: block;
+  margin-bottom: .5rem;
+  margin-top: 1rem;
+}
+
+input{
+  display: block;
+  max-width: 100px;
+}
+
+.button-creator{
+  display: grid;
+  gap: 30px;
+  padding: 30px;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+
+#controles{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: .875rem;
+  background: #eee;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0px rgb(0,0,0, .1);
+}
+
+#fontSize{
+  width: 50px;
+}
+
+.css{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #333;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.css{
+  text-align: left;
+}
+.css span{
+  display: block;
+  margin-bottom: .5rem;
+  color: #333;
+}
+
+.reset{
+  margin-top: 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: #ccc;
+  padding: 10px;
+  cursor: pointer;
+}
+.reset:hover{
+  background: #eee;
+  border: 1px solid #333;
+}
+.reset:active{
+  background: #333;
+  transition: .3s;
+ 
+}
+
+
+@media (max-width: 700px){
+  h1{
+    font-size: 2.5rem;
+  }
+  .button-creator{
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+  }
+  .body{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+
+}
